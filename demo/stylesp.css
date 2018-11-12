@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul li
+{
+    list-style: none;
+}
+ul li a
+{
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+body
+{
+    background:#e2cbc8;
+}
+#title_bc #canhchinh ,#title_new #canhchinh
+{
+    font-family: "HelveticaNeue", Roboto, Tahoma, sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#title_bc h3, #title_new h3 
+{
+    font-size: 17px;
+    clear: both;
+    color: #373737;
+    line-height: normal;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+#title_bc #canhchinh::before, #title_new #canhchinh::before, #title_bc #canhchinh::after, #title_new #canhchinh::after 
+{
+    height: 2px !important;
+}
+#title_bc #canhchinh:before, #title_new #canhchinh:before 
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #7b5450;
+    z-index: 1;
+}
+:after, :before 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#title_bc #canhchinh span, #title_new #canhchinh span 
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 12px 4px;
+    position: relative;
+    z-index: 2;
+    background:white;
+    letter-spacing: 0.15em;
+}
+.spbc img,.spnew img
+{
+    width:305px;
+    height:450px;
+}
+.spbc,.spnew
+{
+    width:100%;
+    text-align:center;
+    position:relative;
+}
+#sp:hover
+{
+    border: 1px solid transparent;
+}
+#ct
+{
+    background:#90625b;
+    height:65px;
+    margin-bottom:30%;
+    text-decoration: inherit;
+    font-family: "HelveticaNeue", Roboto, Tahoma, sans-serif;
+}
+.spbc #ct:hover , .spnew #ct:hover
+{
+    background: #e2cbc8;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+
+}
