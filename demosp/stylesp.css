@@ -12,11 +12,22 @@ ul li a
     display: block;
     color:black;
 }
+.spbc ul li a:hover,.spnew ul li a:hover
+{
+    text-decoration: none; 
+    color:white;
+}
+.spkm ul li a:hover
+{
+    text-decoration: none; 
+    font-weight: bolder;
+    color: black;
+}
 body
 {
     background:#e2cbc8;
 }
-#title_bc #canhchinh ,#title_new #canhchinh
+#title_bc #canhchinh ,#title_new #canhchinh,#title_km #canhchinh
 {
     font-family: "HelveticaNeue", Roboto, Tahoma, sans-serif;
     text-align: center;
@@ -24,7 +35,7 @@ body
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#title_bc h3, #title_new h3 
+#title_bc h3, #title_new h3,#title_km h3
 {
     font-size: 17px;
     clear: both;
@@ -37,11 +48,11 @@ body
     padding: 0;
     vertical-align: baseline;
 }
-#title_bc #canhchinh::before, #title_new #canhchinh::before, #title_bc #canhchinh::after, #title_new #canhchinh::after 
+#title_bc #canhchinh::before, #title_new #canhchinh::before,#title_km #canhchinh::before, #title_bc #canhchinh::after, #title_new #canhchinh::after,#title_km #canhchinh::after
 {
     height: 2px !important;
 }
-#title_bc #canhchinh:before, #title_new #canhchinh:before 
+#title_bc #canhchinh:before, #title_new #canhchinh:before,#title_km #canhchinh:before 
 {
     content: "";
     position: absolute;
@@ -58,7 +69,7 @@ body
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-#title_bc #canhchinh span, #title_new #canhchinh span 
+#title_bc #canhchinh span, #title_new #canhchinh span,#title_km #canhchinh span  
 {
     font-size: 20px;
     text-transform: uppercase;
@@ -71,16 +82,22 @@ body
     background:white;
     letter-spacing: 0.15em;
 }
-.spbc img,.spnew img
+.spbc img,.spnew img,.spkm img
 {
-    width:305px;
+    width:306px;
     height:450px;
 }
-.spbc,.spnew
+.spbc,.spnew,.spkm
 {
     width:100%;
     text-align:center;
     position:relative;
+    text-decoration: none;
+    font-size:10pt;
+}
+#sp
+{
+    text-decoration: none;
 }
 #sp:hover
 {
@@ -88,17 +105,26 @@ body
 }
 #ct
 {
-    background:#90625b;
+    background: #e2cbc8;
     height:65px;
     margin-bottom:30%;
-    text-decoration: inherit;
     font-family: "HelveticaNeue", Roboto, Tahoma, sans-serif;
+}
+#ctsp1
+{
+    background: #e2cbc8;
+    height:90px;
+    margin-bottom:30%;
+    font-family: "HelveticaNeue", Roboto, Tahoma, sans-serif;
+}
+#ctkm
+{
+    text-decoration: line-through;
+    color:#4d4d4d;
 }
 .spbc #ct:hover , .spnew #ct:hover
 {
-    background: #e2cbc8;
-    font-size: 17px;
-    color: black;
+    background:#90625b;
+    font-weight: bolder;
     text-decoration: none;
-
 }
